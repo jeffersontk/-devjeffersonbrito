@@ -1,0 +1,45 @@
+@import 'styles/variables.scss';
+@import 'styles/mixins.scss';
+
+.about {
+  @include max-width;
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  scroll-margin-top: 8rem;
+
+  @include device(tablet) {
+    flex-direction: column;
+    margin-bottom: 5rem;
+  }
+  
+  .image{
+    width: 100%;
+    max-width: 38.5rem;
+    height: 44.18rem;
+    position: relative;
+
+    @include device(tablet) {
+      margin-top: 15rem;
+    }
+
+    .box {
+      position: absolute;
+      top: -10rem;
+      left: -1rem;
+    }
+  }
+
+  .content {
+    width: 100%;
+    max-width: 60rem;
+
+    h2 {
+      margin-bottom: 2rem;
+    }
+    a{
+      margin-top: 4rem;
+    }
+  }
+}
