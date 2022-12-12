@@ -1,3 +1,4 @@
+import Head from "next/head";
 import { About } from "../src/Components/About";
 import Footer from "../src/Components/Footer";
 import { Header } from "../src/Components/Header";
@@ -38,6 +39,9 @@ interface HomeProps {
 export default function Home({header, social, about, skills, projects, footer}: HomeProps) {
   return (
     <>
+      <Head>
+        <title>Home - Dev-JeffersonBrito</title>
+      </Head>
       <Navbar />
       <Header header={header} social={social}/>
       <main>
