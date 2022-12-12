@@ -28,7 +28,7 @@ export function Header({header, social}: HeaderProps) {
     <header className={styles['header-wrapper']} id="home">
       <div className={styles.header}>
         <div className={styles.image}>
-          <Image alt='' src={URLImage} layout="fill"/>
+          <Image alt='' src={URLImage} fill/>
         </div>
         <div className={styles.content}>
           <span>Olá meu nome é {name}. Sou um...</span>
@@ -36,13 +36,13 @@ export function Header({header, social}: HeaderProps) {
           <p>{summary}</p>
         </div>
         <div className={styles.social}>
-          <a href={linkedin} target="_blank">
+          <a href={linkedin} target="_blank" rel="noreferrer">
             <RiLinkedinFill className={styles.icon}/>
           </a>
-          <a href={instagram} target="_blank">
+          <a href={instagram} target="_blank" rel="noreferrer">
             <AiFillInstagram className={styles.icon}/>
           </a>
-          <a href={whatsapp} target="_blank">
+          <a href={whatsapp} target="_blank" rel="noreferrer">
             <RiWhatsappFill className={styles.icon}/>
           </a>
         </div>

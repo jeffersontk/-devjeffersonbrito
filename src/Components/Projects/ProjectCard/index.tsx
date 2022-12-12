@@ -14,7 +14,7 @@ export function ProjectCard({project}: ProjectCardProps) {
   
   return (
     <li className={styles.card}>
-      <a href={project.url} target="_blank">
+      <a href={project.url} target="_blank" rel="noreferrer">
         <div className={styles.image}>
           <AiFillGithub  className={styles.icon}/>
           <Image src={URLImage} fill alt=""/>
